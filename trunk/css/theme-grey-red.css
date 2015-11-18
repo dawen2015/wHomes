@@ -1,0 +1,498 @@
+/******* Global *******/
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+a {
+	color: #B50102;
+}
+
+.dspHomeTitles {
+	font-size: 17px;
+	color: #333;
+	font-weight: bold;
+	font-family: Arial,sans-serif;
+	margin-bottom: 20
+}
+
+.btn-danger {
+	background-color: #B50102;
+	background-image: -moz-linear-gradient(center top , #B50102, #B72230);
+}
+
+/************ Header Top *********/
+#header .logo img {
+	max-height: 90px;
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+.headerLinks a {
+	color: #B50102 !important;
+  font-weight: bold;
+}
+
+.headerLinks a:hover {
+	color: #333 !important;
+}
+
+#search input[type="text"], #quick-search input[type="text"], .slideout input[type="text"]{
+	border: 1px solid #CCC;
+	background: none no-repeat scroll right center #FFF;
+}
+
+#search input[type="text"] {
+		margin-top: 7px;
+}
+#kw-suggest-container {
+  border: 1px solid #CCC;
+	background: none repeat scroll 0% 0% #FFF;
+	margin-top: 7px;
+}
+
+.vowHeader {
+	font-size: 11px;
+	padding: 0px 2px 0px 10px;
+	border: none;
+	background: none;
+	color: #777;
+	top: 1px;
+}
+
+.headerLinks img {
+	opacity: 0.3;
+}
+
+/*********************** ajax search box***************************/
+.ui-autocomplete {
+	border-color: #999 #999 -moz-use-text-color !important;
+	border: 1px solid #999 !important;
+}
+
+.ui-cat div {
+	border-left: 1px solid #999;
+}
+
+.ui-autocomplete li {
+	border-bottom: 1px solid #999;
+}
+
+.ui-autocomplete.ui-menu {
+	margin-top: 10px;
+}
+
+/************* Menu*************/
+#menu > ul > li > a, #menu-medium > ul > li > a {
+	color: #B50102 !important;
+	padding: 2px 16px;
+	font-weight:bold;
+	font-family: Arial,sans-serif;
+}
+
+#menu > ul > li > a:hover {
+	color: #333 !important;
+}
+
+#menu02 {
+ 	width: 117px;
+}
+.redBG {
+	background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.container .menuLine {
+	border-top: 2px solid #CCC;
+	padding-bottom:10px;
+	margin-top:15px;
+}
+
+/********* Home: Main Sliders *******/
+.flexslider .slides > li:first-child {
+	float: left; 
+	display: block;
+}
+
+.flex-direction-nav {
+    position: absolute;
+    left: 30px;
+    bottom: 55%;
+    width: 100%;
+		display:block;
+}
+/*********** Home: Quick Search ***************/
+#quick-search h3 {
+	color: #333;
+	font-family: Arial,sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+#searchTypeSelector {
+	font-weight: bold;
+}
+
+#searchTypeSelector a {
+  color: #777;
+}
+
+#searchTypeSelector a.on {
+ 	color: #B50102;
+}
+
+.ui-rangeSlider-bar {
+	background: none repeat scroll 0% 0% #555;
+}
+
+.block-grey h2 {
+  background: none repeat scroll 0% 0% #FFFFFF;
+  color: #B50102;
+	font-weight:bold;
+	font-size:17px;
+	font-family: Arial,sans-serif;
+}
+
+.ui-rangeSlider-container {
+  border-top: 1px solid #939598;
+  border-bottom: none;
+	border-radius: 4px;; 
+}
+
+#openPopOut {
+	height: 36px;
+}
+
+input#quickSearchBtn {
+	line-height: 25px;
+}
+
+.ui-rangeSlider-handle {
+  top: -10px !important;
+	background-image:url(../images/buttons/kw-slide-btn.png);
+	width: 20px;
+	height: 20px;
+}
+ 
+/************** Home: Agents *************/
+#dspHomeAgents {
+	box-shadow: 0px 0px 0px 1px #FFFFFF;
+	border-bottom: 1px solid #CCC;
+	margin-top: 10px;
+	padding-bottom: 16px;
+}
+
+.block-grey {
+	background: none repeat scroll 0% 0% #FFFFFF;
+	box-shadow: 0px 0px 0px 0px #FFFFFF inset;
+}
+
+#dspHomeAgents #infoHolder {
+	width: 270px;
+	padding-top: 24px;
+}
+
+#dspHomeAgents #infoHolder h3 {
+	display: none;
+}
+
+#dspHomeAgents #infoHolder p {
+	font-size: 17px;
+  color: #777;
+	font-style:italic;
+}
+
+#dspHomeAgents #infoHolder a {
+	font-size: 14px;
+	margin-right: 20px;
+	margin-top: 26px;
+}
+
+#dspHomeAgents img {
+  width: 168px;
+	margin-bottom: -16px;
+}
+
+/********** Home: Featured Listings **************/
+
+.wrap10 {	
+	margin-bottom: 10px;
+}
+
+.es-nav .es-nav-prev {
+	background: none repeat scroll 0% 0% #999;
+}
+
+.es-nav .es-nav-next {
+  background: none repeat scroll 0% 0% #999;
+}
+
+.da-thumbs-folio li span {
+	color: #333;
+}
+
+.da-thumbs-folio li span {
+	padding: 5px 0px;		
+	color: #333;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+
+.da-thumbs-folio li:hover {
+	box-shadow:0 0 1px 2px #999 inset;
+}
+
+
+
+/************** Home: Banner **************/
+.gray-banner {
+	background: none repeat scroll 0% 0% #FFFFFF;
+	color: #C10000;
+}
+
+.gray-banner .bannerType {
+	background: none;
+}
+
+.banner img{
+	height: 92px;
+	margin-top: 5px;
+}
+
+.banner .bannerBody {
+	padding: 0px 15px;
+	
+}
+
+.bannerContent {
+	color: #777;
+	font-size: 17px;
+	padding-top: 5px;
+}
+
+.bannerClick {
+	font-size: 17px;
+}
+
+
+/*************** Social Icons ****************/
+
+.social li a i {
+	color:#FFF;
+	background-color:#CCC;
+	font-size:20px;
+	border: 1px solid #CCC;
+	border-radius: 50%;
+	transition: all 200ms ease-in 0s;
+	padding:4px;
+	background-image:none;
+	height: 20px;
+	width: 20px;
+}
+
+.social li a i:hover {
+	background-color:#777;
+	border: 1px solid #777;
+}
+.social {
+	top: 60px;
+	margin-left:10px;
+}
+
+.social ul > li {		
+	overflow: visible;
+	margin-left: 8px;
+	display: inline-block;
+	margin-right: 9px;
+}
+
+
+/****************** Search Page **************/
+#ajaxed-properties .smallProperty:hover, .gridLayout .block-grey:hover {
+	box-shadow:0 0 1px 2px #999;
+}
+
+.slideoutHolder {
+	border: 1px solid #999;
+}
+
+.largeProperty:hover {
+	box-shadow:0 0 1px 2px #999;
+}
+
+.mappedProperty:hover { box-shadow:0 0 1px 1px #999 inset; }
+
+/**************** Detail Page **************/
+h1 a {
+	color: #333;
+}
+
+.headingTitle {
+	margin-right: 5px;
+}
+
+#circleList ol li span {
+  left: -40px;
+}
+
+.pressPage .link a {
+	margin-top:10px;
+}
+
+#contactFeedback {
+	vertical-align: middle;
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+
+.searchPage #quick-search h3 {
+	font-family: inherit;
+}
+
+.frmQuickSearch #searchTypeSelector {
+	font-weight: normal;
+}
+/*
+#lightbox-container-image-box, #lightbox-container-image, #lightbox-image {
+	width:900px;
+	height:auto;
+}
+*/
+
+#search-panel div.selector {
+	float: left;
+	width: 130px;
+	padding-left:2px;
+}
+
+#dialogVow h3 {
+    font-size: 16px;
+}
+
+#dialogVow #confidential {
+    font-size: 9px;
+}
+
+#search-panel {
+    font-size: 18px;
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 700px) {	
+	.slideout {
+		width:100%;
+	}
+	
+	.frmSearch .padded input[type="text"] {
+		width:100%;
+	}
+	
+}
+
+@media screen and (max-width: 460px) {	
+	.social {
+   	margin-top: 100px;
+	}
+	
+	.slideoutHolder {
+		margin-left: -200px;
+		margin-top: 32px;
+	}
+	
+	.padded .slideoutAreas{
+    margin-left: -220px;
+    width: 95%;
+    margin-top: 330px;
+	}
+	
+	#search-panel .span3:nth-child(2) {
+		margin-top: 50px;
+		margin-left: 20px;
+	}
+	
+	#search-panel .span3:nth-child(3) {
+		float: left;
+		margin-left: -77px;
+		margin-top: 10px;
+	}
+	
+	#dialogVow {
+    margin-right: -38%;
+	}
+	
+}
+
+#searchTypeSelector {
+	font-family: Arial,sans-serif;
+	font-size: 17px;
+}
+
+/********* About contact form *********/
+
+.aboutContact input.bigger[type="text"] {
+	width: 268px;
+}
+
+.aboutContact #contactForm {
+	margin-left: 0px;
+}
+
+.aboutContact textarea {
+	height: 86px;
+	width: 268px;
+}
+
+.aboutContact input.btn[type="submit"] {
+	margin-bottom: 18px;
+}
+
+.successMessage {
+	margin-bottom: 11px !important;
+}
+
+.togglables .span3 {
+  width: 215px;
+}
+#fBio div {
+	padding-bottom: 5px;
+}
+
+#vowActionSignin {
+	font-size: 15px;
+}
+
+#vowActionSignin a {
+	font-size: 15px;
+}
+
+.aQuoteBox .aQuoteText {
+	font-size: 13px;
+}
+.aQuoteBox {
+	line-height: 16px;
+}
+
+.pressPage .link a {
+	text-align: left;
+}
+
+#pressPdf {
+	width: 120px;
+}
+
+#dialogVow {
+	margin-right: 16%;
+	position: fixed;
+}
+
+#menu ul ul li, #menu-medium ul ul li {
+  width: 154px;
+}
+
+/******* Luxury Home page ****/
+#luxury-image {
+	float: left;
+	margin: 0px;
+}

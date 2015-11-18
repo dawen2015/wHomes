@@ -1,0 +1,2509 @@
+
+@charset "UTF-8";
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font: 12px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3a3a3a;
+    font-size: 13px;
+}
+
+h1 {
+    color: #43252f;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+input {
+    border: solid 1px gray;
+}
+
+h2 {
+    margin: 15px 0px 0px 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #43252f;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 20px 0px 0px 0px;
+}
+
+h4 {
+    color: #43252f;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 5px 0px;
+    padding: 0;
+    font-size: 13px;
+    color: Black;
+    line-height: 17px;
+}
+
+sup {
+    font-size: 9px;
+}
+
+ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.accordion ul li {
+    line-height: 17px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #009bb8;
+}
+
+    a:hover {
+        text-decoration: none;
+        background: #00a8c7;
+        color: White;
+    }
+
+#header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99998;
+    height: 90px;
+    overflow: hidden;
+}
+
+#header-container {
+    height: 90px;
+    overflow: hidden;
+    background: url(../images/header-bg.jpg) repeat-x left;
+}
+
+#header {
+    margin: 0 auto;
+    position: relative;
+    width: 1150px;
+    float: left;
+    height: 90px;
+}
+
+#footer-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background: url(../images/footer_bkg.jpg) repeat-x left;
+    height: 67px;
+}
+
+#footer-container {
+    height: 67px;
+    width: auto;
+    background: url(../images/footer_bkg.jpg) repeat-x left;
+    color: Black;
+}
+
+#footer {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fullBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#maincontent {
+    min-width: 1150px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+}
+
+#main_information_area {
+    width: 1150px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+#header_left_col {
+    float: left;
+}
+
+#header_right_col {
+    width: 100%;
+    float: right;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#footer_left_col {
+    width: auto;
+    float: left;
+    height: 67px;
+    background: url(../images/footer_bkg.jpg) repeat-x right;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#footer-container {
+    width: 1150px;
+    float: left;
+    background: url(../images/footer_bkg.jpg) repeat-x right;
+}
+
+#footer_right_col {
+    width: 100%;
+    float: right;
+    height: 67px;
+    background: url(../images/footer_bkg.jpg) repeat-x left;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#main_content_right_col {
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+#main_content_left_col {
+    width: auto;
+    float: left;
+    height: 100%;
+}
+
+.top_item_info {
+    margin-right: 10px;
+    margin-top: 7px;
+    float: left;
+}
+
+.top_navigation_item {
+    margin-left: 10px;
+}
+
+.top_left_item {
+    margin-left: 80px;
+}
+
+.top_item_divider {
+    float: left;
+}
+
+.top_login_name {
+    margin-left: 160px;
+}
+
+.top_join_item {
+    margin-left: 10px;
+}
+
+#header_info div a {
+    color: #4b3e3e;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+    #header_info div a.active, #header_info div a:hover {
+        color: #045562;
+        background: #d7e2e4;
+    }
+
+    #header_info div a.active {
+        cursor: default;
+    }
+
+#login_items div a {
+    color: #4b3e3e;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-decoration: none;
+    height: 62px;
+    overflow: hidden;
+    display: block;
+}
+
+    #login_items div a.active, #login_items div a:hover {
+        color: #045562;
+        background: #d7e2e4;
+    }
+
+    #login_items div a.active {
+        cursor: default;
+    }
+
+#login_items .aaar_icon {
+    float: left;
+    margin-left: 60px;
+    margin-top: 12px;
+}
+
+#login_items .login_name {
+    float: left;
+    margin-left: 112px;
+    margin-top: 12px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#login_items .login_name_divider {
+    float: left;
+    margin-left: 10px;
+    margin-top: 14px;
+    height: 20px;
+}
+
+#login_items .aaar_telephone_info {
+    float: right;
+    margin-top: 14px;
+    padding-right: 100px;
+}
+
+#login_items .login_name_espn {
+    float: left;
+    margin-left: 10px;
+    font-size: 11px;
+    margin-top: 12px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#footer_info {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    background: white;
+}
+
+#footer div a {
+    color: black;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+    #footer div a.active, #footer div a:hover {
+        color: black;
+        background: #d7e2e4;
+        font-weight: bold;
+    }
+
+    #footer div a.active {
+        cursor: default;
+    }
+
+.bottom_item_info {
+    margin-right: 5px;
+    margin-top: 15px;
+    float: left;
+    color: Black;
+    border-right: solid 1px black;
+    padding-right: 10px;
+}
+
+.last_bottom_item_info {
+    margin-right: 10px;
+    margin-top: 15px;
+    float: left;
+    color: Black;
+}
+
+.bottom_navigation_item {
+    margin-left: 10px;
+}
+
+.bottom_left_item {
+    margin-left: 80px;
+}
+
+.bottom_item_divider {
+    margin-top: 15px;
+    border: 1 solid black;
+    width: 1px;
+    background: black;
+    float: left;
+}
+
+.bottom_join_item {
+    font-weight: bold;
+}
+
+#top_menu_bar {
+    width: auto;
+    height: 40px;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+}
+
+    #top_menu_bar .top_menu_bar_item {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    #top_menu_bar .top_menu_bar_item_bar {
+    }
+
+.menu_bar_info {
+    width: 100%;
+    clear: both;
+    clear: both;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.top_menu_bar_left_filler {
+    width: 151px;
+    height: 40px;
+    background: #e6e5e5;
+    float: left;
+}
+
+#top_menu_bar .home_item {
+    width: 68px;
+    height: 30px;
+}
+
+#top_menu_bar .why_this_plan_item {
+    width: 145px;
+    height: 30px;
+}
+
+#top_menu_bar .what_is_covered_item {
+    width: 130px;
+    padding-left: 20px;
+}
+
+#top_menu_bar .find_a_doctor_item {
+    width: 105px;
+    padding-left: 15px;
+}
+
+#top_menu_bar .find_an_agent_item {
+    width: 105px;
+    padding-left: 15px;
+}
+
+#top_menu_bar .got_a_quote_item {
+    width: 95px;
+    padding-left: 25px;
+}
+
+#home_page_info {
+    width: 750px;
+    height: 234px;
+    margin-left: 300px;
+    position: fixed;
+    bottom: 57px;
+}
+
+    #home_page_info .prepare_img {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: block;
+        height: 99px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+        #home_page_info .prepare_img .why_this_policy {
+            position: relative;
+            top: -30px;
+            float: right;
+            margin-right: 13px;
+            font-size: 15px;
+            color: #009bb8;
+            font-weight: bolder;
+        }
+
+    #home_page_info .free_quote_group {
+        background: gray;
+        height: 135px;
+        overflow: hidden;
+    }
+
+    #home_page_info .get_a_quote_label {
+        width: auto;
+        height: auto;
+        position: relative;
+        top: -45px;
+        float: right;
+        margin-right: 0px;
+    }
+
+    #home_page_info .home_page_questions_block {
+        float: left;
+        height: 135px;
+        overflow: hidden;
+        width: 231px;
+    }
+
+    #home_page_info .watch_now_label {
+        position: relative;
+        top: -45px;
+        float: left;
+        margin-left: 15px;
+        font-size: 15px;
+        color: #009bb8;
+        font-weight: bolder;
+    }
+
+    #home_page_info .call_company_representative {
+        float: left;
+        height: 135px;
+        overflow: hidden;
+        width: 233px;
+        background: url(../images/home_page_representiative.gif);
+        background-repeat: no-repeat;
+    }
+
+    #home_page_info .find_now_label {
+        position: relative;
+        top: 105px;
+        float: left;
+        margin-left: 15px;
+        font-size: 15px;
+        color: #009bb8;
+        font-weight: bolder;
+    }
+
+#home_why_this_plan {
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+}
+
+#home_page_freequote_info {
+    float: left;
+    border-right: solid 1px black;
+    overflow: hidden;
+    height: 135px;
+    width: 285px;
+}
+
+#home_page_freequote_info_pic {
+    filter: alpha(opacity=85);
+    opacity: 85;
+}
+
+.landing_page_info_box {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    background: url(../images/findanagent_bkg.png);
+    background-repeat: no-repeat;
+}
+
+.landing_page_error_info {
+    width: 388px;
+    height: 320px;
+    background: url(../images/elibitility_error_info_box.png);
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-left: 5px;
+}
+
+#landing_page_info {
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.landing_info_insidebox {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: 365px;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.landing_info_error_insidebox {
+    margin-top: 40px;
+    padding-left: 60px;
+}
+
+#landing_eligility_text_info {
+    width: 100%;
+    height: 210px;
+    margin-left: 20px;
+}
+
+#landing_info_insidebox_error_info {
+    height: 300px;
+    overflow: hidden;
+    width: 415px;
+    background: url(../images/elegibility_bkg.png) repeat-x left;
+    position: relative;
+    margin-top: 40px;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+}
+
+.landing_info_box_closebox {
+    float: right;
+    padding-right: 100px;
+    clear: both;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.check_now_button {
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    float: left;
+    margin-left: 37px;
+    padding-top: 10px;
+}
+
+.check_elibigility_button {
+    text-decoration: underline;
+    position: relative;
+    cursor: pointer;
+    border: solid 0px white;
+    color: #00a8c7;
+    font-size: 13px;
+    background: white;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.eligibility_text {
+    display: block;
+    clear: both;
+    color: #1096b0;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+#landing_popupbox {
+    height: 307px;
+    width: 460px;
+    position: relative;
+    top: -50px;
+    left: -40px;
+    background: url(../images/box.gif);
+    background-repeat: no-repeat;
+    padding-top: 35px;
+    visibility: hidden;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+#home_page_slogan {
+    background: url(../images/home_page_discover.jpg);
+    background-repeat: no-repeat;
+    width: 749px;
+    height: 99px;
+    padding-top: 2px;
+}
+
+.Apply_now_label {
+    float: right;
+}
+
+.selected_item {
+    background: #00a8c7;
+    color: White;
+}
+
+.key_feature_text {
+    clear: both;
+    font-size: 12px;
+    height: 16px;
+    z-index: 9999;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #089ebc;
+}
+
+#preventive_main_paragraph {
+    margin: 15px 0px;
+    padding: 0;
+    font-size: 13px;
+    color: Black;
+    line-height: 17px;
+}
+
+#preventive_apply_info {
+    float: right;
+    height: 100%;
+    width: 180px;
+    margin-top: 55px;
+    margin-right: 10px;
+    left: 40px;
+}
+
+
+#preventive_popup {
+    position: relative;
+    left: 145px;
+    top: -180px;
+    background: url(../images/PREVENTIVE_HOSPITAL_CARE_PLANS.png) no-repeat;
+    width: 306px;
+    height: 105px;
+    padding-top: 35px;
+    padding-left: 20px;
+    line-height: 17px;
+    visibility: hidden;
+}
+
+input {
+    border: solid 1px black;
+}
+
+.eligibility_before_msg {
+    font-size: 15px;
+    display: block;
+    line-height: 17px;
+}
+
+.eligibility_before_msg_top_line {
+    margin-top: 10px;
+}
+
+#state_label {
+    float: left;
+    width: 200px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#zip_code_label {
+    float: left;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#state_names_list {
+    float: left;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.landing_zipcode {
+    float: left;
+    margin-top: 5px;
+    width: 150px;
+}
+
+#dob_label {
+    float: left;
+    width: 200px;
+    width: 200px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.date_of_birth_value {
+    float: left;
+    width: 150px;
+    margin-top: 5px;
+}
+
+.landing_popup_quality_intro_msg {
+    font-size: 12px;
+    color: Black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.landing_qualify_criteria {
+    margin-top: 5px;
+    width: 330px;
+    font-size: 11px;
+}
+
+.landing_popup_ul {
+    margin-top: 5px;
+    line-height: 13px;
+}
+
+.landing_popup_warning {
+    color: Black;
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 10px;
+    width: 340px;
+}
+
+#ineligible_error_msg {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#invalid_age_message {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.invalid_age_label_info {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.invalid_location_label_info {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.invalid_state_area_info {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.return_to_eligibility_box {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.return_to_eligibility_left_arrow {
+    float: left;
+    color: #1096b0;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+}
+
+#go_back_to_eligibility_form {
+    margin-left: 5px;
+    float: left;
+    color: #1096b0;
+    font-size: 13px;
+    font-weight: bolder;
+    width: 220px;
+    text-transform: uppercase;
+}
+
+.still_landing_msg {
+    font-size: 13px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    clear: both;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.still_landing_msg2 {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+
+.still_landing_msg3 {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.pre_existing_condition_premim_info {
+    width: 360px;
+}
+
+#deductible_popup_close {
+    float: right;
+    margin-right: 45px;
+    cursor: pointer;
+    margin-top: -4px;
+    font-size: 10px;
+}
+
+#pre_existing_condition_close_box {
+    float: right;
+    margin-right: 45px;
+    cursor: pointer;
+    margin-top: -4px;
+    font-size: 10px;
+}
+
+.pre_existing_condition_premim_label {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.deductible_popup_title {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.deductible_popup_info {
+    font-size: 11px;
+    width: 350px;
+    line-height: 15px;
+}
+
+.popup_info_close_box {
+    float: right;
+    margin-right: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: -4px;
+}
+
+.popup_info_premim_label {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.popup_info_premim_info {
+    font-size: 12px;
+    width: 280px;
+    line-height: 15px;
+}
+
+.popup_info_deductible_info {
+    font-size: 12px;
+    width: 360px;
+    line-height: 15px;
+}
+
+.popup_info_medical_underwriting_info {
+    font-size: 12px;
+    width: 340px;
+    line-height: 15px;
+}
+
+.popup_info_preferred_organization_info {
+    font-size: 13px;
+    width: 360px;
+    line-height: 15px;
+}
+
+.popup_info_medical_underwritings_close_box {
+    float: right;
+    margin-right: 85px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: -6px;
+}
+
+.popup_info_premiums_payments_close_box {
+    float: right;
+    margin-right: 145px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: -2px;
+}
+
+.popup_info_premium_payments_info {
+    font-size: 12px;
+    width: 280px;
+    line-height: 15px;
+}
+
+#eligibility_info_box {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.whatiscover_next_link {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.what_is_cover_main_item {
+    color: #43252f;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.poup_link {
+    color: #44b6cb;
+    cursor: pointer;
+}
+
+.what_is_cover_main_item_active {
+    width: 100%;
+    height: 100%;
+    background: transparant;
+}
+
+.accordion li ul li a {
+}
+
+.accordion li ul li {
+}
+
+    .accordion li ul li:hover {
+        background: transparant;
+    }
+
+
+.what_is_covered_right_area {
+    width: 100%;
+    clear: both;
+}
+
+#what_is_covered_content {
+    float: left;
+    padding-top: 20px;
+    width: 490px;
+}
+
+.what_is_covered_ul li {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.why_this_plan_info_area {
+    background: white;
+    float: left;
+    z-index: 200;
+    width: 900px;
+    margin-left: 150px;
+}
+
+.why_this_plan_text_box {
+    margin-left: 300px;
+    height: 552px;
+    width: 749px;
+}
+
+.why_this_plan_menubar {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+#what_is_cover_navigation {
+    float: left;
+    margin-right: 0px;
+    height: 100%;
+}
+
+#leftColFiller {
+    width: 185px;
+    float: left;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    overflow: hidden;
+    background: url(../images/leftNavBkg.jpg) repeat-y;
+}
+
+.what-is_cover_right_col {
+    float: right;
+    height: 100%;
+    width: 180px;
+    margin-top: 75px;
+    margin-right: 10px;
+}
+
+.why_this_plan_right_col {
+    float: right;
+    height: 100%;
+    width: 180px;
+    margin-top: 75px;
+    margin-right: 10px;
+}
+
+.enter_site_button {
+    position: relative;
+    bottom: 30px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 40px;
+}
+
+#plan_table_header {
+    background: url(../images/right_plan_header_bkg.jpg) repeat-x left;
+    height: 32px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    border-bottom: solid 2px #1096b0;
+    clear: both;
+}
+
+.right_plan_odd_row {
+    width: 100%;
+    height: 50px;
+    background: url(../images/selecting_BG_grey1.png);
+    background-repeat: no-repeat;
+    border-top: solid 1px white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.right_plan_odd_high_row {
+    width: 100%;
+    height: 70px;
+    background: url(../images/selecting_BG_grey4.png);
+    background-repeat: no-repeat;
+    border-top: solid 1px white;
+    padding-top: 10px;
+}
+
+.right_plan_even_row {
+    width: 100%;
+    height: 50px;
+    background: url(../images/selecting_BG_grey2.png);
+    background-repeat: no-repeat;
+    border-top: solid 1px white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hsa_info_area {
+    height: 1250px;
+}
+
+.hsa_menu_bar {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.hsa_info_area_box {
+    float: left;
+    padding-top: 20px;
+    padding-right: 15px;
+    width: 490px;
+}
+
+.hsa_para_spaces {
+    margin-top: 20px;
+}
+
+.hsa_nextlink {
+    padding-top: 60px;
+    clear: both;
+}
+
+.accordion a {
+}
+
+    .accordion a:hover {
+        background: transparent;
+        color: #43252f;
+        font-weight: bold;
+        font-size: 14px;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+    }
+
+.main_menu_item {
+    padding-left: 10px;
+}
+
+.main_menu_item_separator {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.main_menu_item_bottom_divider {
+    margin-top: 15px;
+}
+
+.sub_menu_item {
+    position: relative;
+    left: -10px;
+    cursor: pointer;
+}
+
+.right_plan_even_high_row {
+    width: 100%;
+    height: 70px;
+    background: url(../images/selecting_BG_grey3.png);
+    background-repeat: no-repeat;
+    padding-top: 7px;
+    border-top: solid 1px white;
+}
+
+.even_high_row_spliter {
+    background: url(../images/right_plan_even_row_hight_row_spliter.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 75px;
+    float: left;
+    position: relative;
+    top: -4px;
+    overflow: hidden;
+}
+
+#plan_tables {
+    width: 100%;
+    height: 100px;
+}
+
+    #plan_tables ul {
+        margin-top: 5px;
+    }
+
+        #plan_tables ul li a {
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        #plan_tables ul li {
+            list-style-type: disc;
+        }
+
+            #plan_tables ul li a:hover {
+                background: #00a8c7;
+            }
+
+.select_right_plan_left_col_info {
+    float: left;
+    width: 232px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 12.5px;
+    line-height: 15px;
+    color: #393939;
+}
+
+.select_right_plan_right_col_info {
+    float: left;
+    width: 200px;
+    margin-left: 5px;
+    height: 100%;
+    font-size: 12px;
+}
+
+.select_right_plan_left_header {
+    font-size: 18px;
+    color: #43252f;
+    width: 234px;
+    margin-left: 20px;
+    float: left;
+    height: 100%;
+    padding-top: 5px;
+    border-right: solid 1px white;
+}
+
+.select_right_plan_right_header {
+    font-size: 18px;
+    color: #43252f;
+    width: 200px;
+    margin-left: 20px;
+    float: left;
+    height: 100%;
+    padding-top: 5px;
+}
+
+#landing_headers {
+    margin-top: 5px;
+}
+
+.selectedable_button {
+    cursor: pointer;
+}
+
+.what_is_covered_top_divider {
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 480px;
+}
+
+.why_this_plan_info_area_box {
+    margin-left: 40px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 430px;
+}
+
+.why_this_plan_info_area_box_msg1 {
+    font-weight: bold;
+    clear: both;
+    margin-bottom: 0px;
+}
+
+.why_this_plan_info_area_box_msg2 {
+    margin-top: 5px;
+}
+
+.why_this_plan_next_link {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.why_this_plan_next_link_title {
+    color: #009bb8;
+    font-weight: bold;
+}
+
+.why_this_plan_next_link_arrow {
+    color: #009bb8;
+    font-weight: bold;
+}
+
+.what_is_covered_extra_lines {
+    margin-top: 20px;
+}
+
+.whatiscovered_home_delivery_footer_msg {
+    clear: both;
+    font-size: 11px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.whatisdiscover_weightmanagement_msg1 {
+    font-size: 11px;
+    color: #393939;
+    margin-top: 10px;
+}
+
+.whatisdiscover_weightmanagement_msg2 {
+    font-size: 11px;
+    color: #393939;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.whatisdiscover_weightmanagement_msg3 {
+    font-size: 11px;
+    color: #393939;
+    margin-top: 1px;
+}
+
+.whatisdiscover_weightmanagement_msg4 {
+    font-size: 11px;
+    color: #393939;
+    margin-top: 10px;
+}
+
+.whatisdiscover_weightmanagement_msg5 {
+    font-size: 11px;
+    color: #393939;
+    margin-top: 10px;
+}
+
+.weight_management_menu_bar {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.elibility_info li {
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.left_menu_nav_top_divider {
+    border-bottom: solid 1px #43252f;
+    height: 1px;
+    width: 90px;
+}
+
+.left_menu_nav_mid_divider {
+    border-bottom: solid 1px #c6bfc1;
+    height: 1px;
+    width: 90px;
+}
+
+.apply_now_divider {
+    border-bottom: solid 1px #43252f;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 155px;
+}
+
+.apply_now_info_box {
+    width: 180px;
+    height: 140px;
+    background: #f5bb37;
+    padding-left: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-top: 20px;
+}
+
+.apply_now_title_box {
+    margin-left: 10px;
+}
+
+.apply_now_title {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #43252f;
+}
+
+.apply_now_coverage_title {
+    font-size: 12px;
+    color: #43252f;
+    line-height: 17px;
+}
+
+.apply_now_coverage_title2 {
+    font-size: 12px;
+    color: #43252f;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.apply_now_profile_box {
+    width: 180px;
+    height: auto;
+    background: #e6e5e5;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1px;
+    height: 230px;
+    padding-bottom: 20px;
+}
+
+.apply_now_profile_title {
+    font-size: 12px;
+    color: #391924;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.apply_now_state_info {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #391924;
+}
+
+.apply_now_state_name {
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.apply_now_zipcode_info {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #391924;
+}
+
+.apply_now_zipcode_name {
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.apply_now_dob_info {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #391924;
+}
+
+.apply_now_dob_name {
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.apply_now_change_info {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.apply_now_changeinfo_name {
+    color: #009bb8;
+    font-weight: bold;
+}
+
+.apply_now_right_arrow {
+    color: #009bb8;
+    font-weight: bold;
+}
+
+.apply_now_guidance_info {
+    font-size: 13px;
+    color: #43252f;
+    margin-left: 10px;
+    font-weight: bolder;
+    line-height: 17px;
+}
+
+.apply_now_watch_video {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.apply_now_watch_video_name {
+    color: #009bb8;
+    font-weight: bold;
+}
+
+.apply_now_get_info_name {
+    font-size: 13px;
+    color: #43252f;
+    margin-left: 10px;
+    font-weight: bolder;
+    line-height: 17px;
+}
+
+.apply_now_gonow_name {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.apply_now_go_now_name {
+    color: #009bb8;
+    font-weight: bold;
+}
+
+.hsa_title {
+    font-size: 20px;
+}
+
+#findanagent_box {
+    width: 471px;
+    height: 306px;
+    background: url(../images/findanagent_bkg.jpg);
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 40px;
+    color: #393939;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.findanagent_first_para {
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 480px;
+}
+
+.title_spaces {
+    margin-top: 20px;
+}
+
+.paragraph_space {
+    margin-top: 10px;
+}
+
+.findanagent_agentinfo {
+    float: left;
+    width: 160px;
+    height: 70px;
+}
+
+.indanagent_agentinfo div {
+    display: block;
+}
+
+.hyper_underline {
+    text-decoration: underline;
+}
+
+.findanagent_zipcode {
+    border: solid 1px #bababa;
+    margin-top: 5px;
+}
+
+.find_an_agent_btn {
+    margin-left: 15px;
+}
+
+.findanagent_whatiscover_next_link {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.need_more_choices {
+    margin-top: 120px;
+    font-size: 18px;
+    clear: both;
+}
+
+.need_more_choices_info {
+    margin-top: 5px;
+    clear: both;
+    width: 400px;
+    line-height: 20px;
+}
+
+.user_info {
+    float: left;
+    width: 120px;
+    height: 50px;
+}
+
+.user_info_label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.user_info div {
+    display: block;
+}
+
+.find_an_agent_info {
+    float: left;
+    width: 120px;
+    height: 50px;
+}
+
+.find_an_agent_info_top_line {
+    height: 15px;
+    display: block;
+    clear: both;
+}
+
+.findanagent_footnoter {
+    font-size: 11px;
+    color: #393939;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.top_menu_vertical_divider {
+    background: white;
+    width: 1px;
+    height: 30px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.apply_now_or {
+    float: left;
+    font-size: 26;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+.apply_now_information_box {
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 480px;
+}
+
+.top_menu_bar_divder {
+    background: transparent;
+    width: 1px;
+    height: 30px;
+    float: left;
+}
+
+.aarp_members_selection {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+    .aarp_members_selection input {
+        width: 30px;
+        margin-bottom: 15px;
+    }
+
+.aarp_member_status {
+}
+
+label, input[type="radio"] {
+    font-size: 13px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#why_this_plan {
+    height: 600px;
+}
+
+.renewmebership_info {
+    clear: both;
+    margin-top: 2px;
+}
+
+.renewmembership_questionsign {
+    float: left;
+    background: #089ebc;
+    color: White;
+    font-size: 13px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-right: 5px;
+}
+
+.renewmebership_info input {
+    background: #feecc6;
+    border: solid 1px #00a8c7;
+    margin-bottom: 7px;
+}
+
+.renewmebership_info .membershipitem {
+    float: left;
+    width: 150px;
+}
+
+.renewmebership_info .membershipitem_input {
+    float: left;
+    margin-left: 4px;
+    color: Black;
+}
+
+.error {
+    color: Red;
+    float: left;
+    padding-left: 10px;
+}
+
+.error_msg {
+    color: Red;
+}
+
+.membership_label {
+    float: right;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.second_membership_label {
+    float: left;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.why_this_plan_info_area_box_membership {
+    margin-left: 40px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 0px;
+    width: 410px;
+}
+
+.why_this_plan_info_area_box_renewmembership {
+    margin-left: 40px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 0px;
+    width: 610px;
+}
+
+.why_this_plan_right_col_membership {
+    float: right;
+    height: 100%;
+    width: 260px;
+    margin-top: 40px;
+    margin-right: 10px;
+    background: #ffc342;
+    height: 150px;
+    visibility: hidden;
+}
+
+.membership_data_item {
+    height: 17px;
+    width: 200px;
+}
+
+.first_membership_data_item {
+    height: 17px;
+    width: 185px;
+}
+
+#membership_apply_info_box_title {
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+.membership_apply_now_info_box {
+    width: 180px;
+    height: 140px;
+    background: #f5bb37;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.membership_apply_now_divider {
+    border-bottom: solid 1px #43252f;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+#invalid_membership_id {
+    font-size: 9px;
+    color: Red;
+    position: relative;
+    top: -155px;
+    left: 370px;
+    width: 150px;
+    height: 50px;
+    padding: 0px;
+    visibility: hidden;
+}
+
+.membership_one_item {
+    display: block;
+    clear: both;
+}
+
+.membership_select_box {
+    border: solid 1px #00a8c7;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 180px;
+}
+
+.membership_select_label {
+    padding-top: 5px;
+}
+
+.membership_billing_data_item {
+    height: 17px;
+    width: 180px;
+}
+
+.why_this_plan_info_area_renew_membership {
+    width: 749px;
+    height: 766px;
+    background: white;
+    float: left;
+    z-index: 200;
+    margin-left: 200px;
+}
+
+.membership_billing_ccmonth_data_item {
+    height: 17px;
+    width: 40px;
+}
+
+.membership_ccmonth_select_box {
+    border: solid 1px #00a8c7;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 87px;
+}
+
+.membership_ccyear_select_box {
+    border: solid 1px #00a8c7;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 90px;
+}
+
+.membership_cardcode_data_item {
+    height: 17px;
+    width: 100px;
+}
+
+#why_this_plan {
+    height: 532px;
+}
+
+.billing_address_label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    font-size: 11px;
+}
+
+#billing_address_same_mailing {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    overflow: hidden;
+}
+
+.submit_payment_btn {
+    clear: both;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+
+.renew_membership_menubar {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.membership_subtitle_text {
+    font-weight: bold;
+}
+
+.renew_membership_billing_info {
+    width: 660px;
+    clear: both;
+    margin-left: 40px;
+}
+
+.renew_membership_billing_info_leftcol {
+    float: left;
+    width: 345px;
+    height: 100px;
+}
+
+.renew_membership_billing_info_righttcol {
+    float: left;
+    width: 290px;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.renew_membership_billing_info_options {
+    clear: both;
+    margin-top: 10px;
+}
+
+.copyright_bottom_item_info {
+    float: right;
+    margin-top: 15px;
+}
+
+.find_an_agent_box {
+    height: 620px;
+}
+
+.renew_membership_info {
+    margin-left: 200px;
+}
+
+.why_this_plan_info_area_renewmembership {
+    background: white;
+    float: left;
+    z-index: 200;
+    width: 750px;
+}
+
+.find_an_agent_info_area {
+    height: 590px;
+    overflow: hidden;
+}
+
+.find_an_agent_info_content {
+    width: 490px;
+    overflow: hidden;
+}
+
+.DocTalkVideoHolder {
+    width: 485px;
+    height: 400px;
+}
+
+div.DocTalkNavContainer {
+    float: left;
+    width: 192px;
+    position: relative;
+    top: 10px;
+}
+
+.doctalk_html5_video {
+    width: 480px;
+    position: relative;
+    top: 0px;
+    border: none;
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+}
+
+.doctalk_video_container {
+    height: 400px;
+    overflow: hidden;
+}
+
+.apply_membership_billing_info_righttcol {
+    float: left;
+    width: 290px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.why_this_plan_info_area_apply_membership {
+    width: 749px;
+    background: white;
+    float: left;
+    z-index: 200;
+    margin-left: 200px;
+    height: auto;
+}
+
+.apply_member_top_box {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.apply_member_top_box_left_col {
+    float: left;
+    width: 401px;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.apply_member_status {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.apply_member_top_box_right_col {
+    float: right;
+    width: 270px;
+    background: #ffc342;
+    height: 180px;
+    padding-left: 20px;
+    color: #43252f;
+}
+
+.apply_member_top_box_right_col_title {
+    padding-top: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.apply_membershipt_divider {
+    width: 240px;
+}
+
+.apply_member_box_info {
+    width: 100%;
+    height: 100%;
+}
+
+.apply_member_box_info_left_col {
+    width: 360px;
+    float: left;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.apply_member_box_info_right_col {
+    width: 310px;
+    background: white;
+    float: left;
+    height: auto;
+}
+
+.apply_cw_code {
+    float: left;
+    background: #089ebc;
+    color: White;
+    font-size: 13px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-right: 5px;
+}
+
+.member_fee_title {
+    clear: both;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #393939;
+    margin-top: 10px;
+}
+
+.enroll_msg {
+    clear: both;
+    margin-top: 5px;
+}
+
+.get_info_kit_box_msg1 {
+    font-weight: bolder;
+    color: #3a3a3a;
+    margin-top: 20px;
+}
+
+.verify_memvbership_right_col {
+    float: right;
+    height: 100%;
+    width: 260px;
+    margin-top: 25px;
+    margin-right: 10px;
+    background: #ffc342;
+    height: 150px;
+}
+
+.video_navigation_bar {
+    clear: both;
+    width: 500px;
+    height: 22px;
+    background: url(../images/videonavigationbar_bkg.jpg) repeat-x right;
+    margin-top: 5px;
+    padding-top: 0px;
+    z-index: 9999;
+    position: relative;
+}
+
+    .video_navigation_bar .chapter_btn {
+        float: left;
+        border-left: solid 1px white;
+    }
+
+#main_video_container {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.chapter_buttons {
+    float: left;
+    width: 420px;
+    height: 100%;
+    padding-left: 60px;
+}
+
+#Contact_form {
+    width: 480px;
+    height: 400px;
+    background: url(../images/videos_images/CONTACT.jpg);
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#toptips_form {
+    width: 480px;
+    height: 400px;
+    background: white;
+    display: none;
+}
+
+.video_navigation_button {
+    cursor: pointer;
+}
+
+#hint_box {
+    background: url(../images/VIDEO_ASSETS/CAPTION1.jpg);
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 51px;
+    clear: both;
+    margin-top: 3px;
+    margin-left: 23px;
+    visibility: hidden;
+}
+
+#my_video {
+    width: 100%;
+    height: 297px;
+    overflow: hidden;
+    padding-top: 20px;
+    position: relative;
+}
+
+    #my_video a {
+        background: transparent;
+    }
+
+#main_video_container a {
+    background: transparent;
+}
+
+    #main_video_container a:hover {
+        text-decoration: none;
+        background: transparent;
+    }
+
+#my_video a:hover {
+    text-decoration: none;
+    background: transparent;
+}
+
+.Alreadymembership_apply_now_info_box {
+    width: 260px;
+    height: 140px;
+    background: #f5bb37;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#invalid_already_register_membership_id {
+    font-size: 9px;
+    color: Red;
+    clear: both;
+    font-size: 11px;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.renew_membership_apply_now_info_box {
+    width: 260px;
+    height: 140px;
+    background: #f5bb37;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.why_this_plan_right_col_renew_membership {
+    float: right;
+    height: 100%;
+    width: auto;
+    margin-top: 40px;
+    background: #ffc342;
+    height: 150px;
+    visibility: hidden;
+    padding-top: 15px;
+}
+
+#renew_membership_apply_info_box_title {
+    margin-left: 0px;
+    font-size: 22px;
+}
+
+.renew_apply_now_coverage_title {
+    font-size: 13px;
+    color: #43252f;
+    line-height: 17px;
+}
+
+.states_drop_down_list {
+    height: 20px;
+    width: 150px;
+}
+
+.get_a_quote_area {
+    height: 600px;
+}
+
+.find_a_doctor_area {
+    height: 600px;
+}
+
+.selected_question_button {
+    cursor: pointer;
+}
+
+.home_find_an_agent {
+    position: relative;
+    top: 65px;
+    left: 15px;
+    color: #7d6a57;
+}
+
+#home_main_slogan {
+    font-size: 21px;
+    color: White;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+#home_sub_slogan1 {
+    font-size: 15px;
+    color: White;
+    margin-left: 20px;
+    line-height: 24px;
+}
+
+#home_sub_slogan2 {
+    font-size: 15px;
+    color: White;
+    margin-left: 19px;
+    line-height: 24px;
+}
+
+.top_tips_title {
+    font-size: 12px;
+    font-weight: bolder;
+    clear: both;
+    margin-top: 10px;
+}
+
+.top_tips_text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#Legal_Notice {
+    position: fixed;
+    bottom: 67px;
+    width: 1150px;
+    z-index: 99999;
+    background: #e8e8e8;
+    padding: 20px;
+    visibility: hidden;
+    height: 590px;
+}
+
+    #Legal_Notice p {
+        margin-bottom: 10px;
+    }
+
+.legal_notice_close_btn {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download_state_names {
+    clear: both;
+    height: 25px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.download_state_names_label {
+    float: left;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.download_state_names_items {
+    float: left;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.download_state_names_btn {
+    float: left;
+    margin-left: 5px;
+}
+
+.display_area {
+    height: 800px;
+}
+
+.privacy_policy_subtitle {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.why_this_plan_info_privacy_policy_box {
+    margin-left: 40px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 630px;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+    .why_this_plan_info_privacy_policy_box p {
+        margin-top: 10px;
+    }
+
+#share_popupbox {
+    width: 200px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: 300px;
+    z-index: 99999;
+    position: relative;
+    visibility: hidden;
+}
+
+    #share_popupbox .share_popup_item {
+        clear: both;
+        width: 100%;
+        border-bottom: solid 1px #cccccc;
+        height: 20px;
+        padding-top: 5px;
+        position: relative;
+        width: 190px;
+    }
+
+    #share_popupbox .share_popup_item_label {
+        float: left;
+        color: black;
+        padding-left: 15px;
+        width: 150px;
+    }
+
+.eligible_title {
+    clear: both;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#help_page_content1 {
+    background: url(../images/HELP_PAGE/help_header.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 30px;
+    clear: both;
+    width: 668px;
+    height: 337px;
+    padding-top: 45px;
+}
+
+.help_topic_title {
+    float: left;
+    width: 310px;
+    font-weight: bolder;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+
+.help_topic_information {
+    float: left;
+    width: 300px;
+    height: 100px;
+    padding-left: 25px;
+    font-size: 12px;
+}
+
+.one_help_topic {
+    clear: both;
+}
+
+#help_page_content2 {
+    background: url(../images/HELP_PAGE/help_paragraph2.jpg);
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    clear: both;
+    width: 668px;
+    height: 490px;
+    padding-top: 8px;
+    margin-top: -30px;
+}
+
+#help_page_content3 {
+    background: url(../images/HELP_PAGE/help_paragraph3.jpg);
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    clear: both;
+    width: 668px;
+    height: 1286px;
+    padding-top: 8px;
+    margin-top: -130px;
+}
+
+#help_page_content4 {
+    background: url(../images/HELP_PAGE/help_paragraph4.jpg);
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    clear: both;
+    width: 668px;
+    height: 834px;
+    padding-top: 8px;
+    position: relative;
+    top: 15px;
+}
+
+#verizon_icon a {
+    background: transparent;
+}
+
+    #verizon_icon a:hover {
+        text-decoration: none;
+        background: transparent;
+    }
+
+.return_to_top {
+    float: right;
+    width: 75px;
+    height: 20px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+}
+
+    .return_to_top a {
+        background: transparent;
+    }
+
+        .return_to_top a:hover {
+            text-decoration: none;
+            background: transparent;
+        }
+
+#Q1 {
+    clear: both;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #393939;
+    font-weight: bolder;
+}

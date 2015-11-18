@@ -1,0 +1,11 @@
+﻿@media print
+{
+    /* All your print styles go here */
+    #header, #footer, #nav, .not-print-item
+    {
+        display: none !important;
+    }
+    
+    label,input {font-size:10px;font-weight:normal !important;}
+    input { outline:none; border: 0px solid;font-size:10px;}
+}

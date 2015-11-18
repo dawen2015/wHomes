@@ -1,0 +1,25 @@
+
+.control-bar
+{
+	display: block !important;
+	height: 39px !important;
+	background: url(/images/player/cntrl-bg.gif) repeat-x;
+	border: 1px solid #bdced4;
+	bottom:-21px !important;
+}
+.time-disp
+{
+	color: #4c95a5;
+	font-size: 9px;
+	line-height: 39px;
+	height: 39px;
+}
+.play-btn
+{
+}
+/*
+.ui-icon-play {background:url(/images/player/play.gif) no-repeat!important;height:29px!important;width:34px!important;}
+*/
+.volume_control
+{
+}

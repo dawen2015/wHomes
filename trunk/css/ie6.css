@@ -1,0 +1,47 @@
+html, body{
+	height: 100%;
+	
+}
+
+#header-wrap, #footer-wrap , #home_page_info, #Legal_Notice{
+	position: absolute;
+}
+
+#header-container, #footer-container {
+	
+}
+
+#footer-wrap {
+	bottom: -1px;
+}
+
+#ie6-container-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#header {width:100%}
+
+#header_left_col, header_right_col, #footer_right_col, #footer_left_col, #main_content_left_col, #main_content_right_col {display:none;  }
+
+.fullBg { position: absolute;}
+
+#home_page_info  {position: absolute;bottom:60px}
+
+.why_this_plan_text_box { margin-left:150px;height: 552px;  }
+.why_this_plan_right_col {float: right; height: 100%; width: 180px; margin-top: 75px;  }
+
+.findanagent_first_para {width:420px;overflow:hidden;float:left; }
+.select_right_plan_left_col_info {float:left;width:232px;margin-left:10px; font-weight:bold; height:100%;padding-left:0px;padding-right:10px;padding-top:5px;font-size:12.5px;line-height:15px;color:#393939;}
+
+.select_right_plan_left_header {font-size:18px;color:#43252f;width:214px;margin-left:20px;float:left; height:100%; padding-top:5px; border-right:solid 1px white;}
+
+.select_right_plan_right_header {font-size: 18px; color: #43252f; width: 200px; margin-left: 20px; float: left;height: 100%; padding-top: 5px;}
+.renew_membership_info {margin-left: 100px; }
+.why_this_plan_info_area_renew_membership  {width: 749px; height: 666px; background: white; float: left;z-index: 200;margin-left: 100px;}
+
+.what-is_cover_right_col {float: right; height: 100%; width: 160px; margin-top: 75px; margin-right: 10px;  }
+
+
+
+

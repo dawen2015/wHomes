@@ -1,0 +1,433 @@
+a {
+    outline: none;
+}
+
+#gallery_container ul, #gallery_container ul li, #gallery_container ol {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+#gallery_main_content {
+    min-height: 500px;
+    width: 1054px;
+    overflow: hidden;
+    padding: 20px 0 0 0;
+    margin: 0 0 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #213242;
+}
+
+#gallery_container .top_intro {
+    width: 620px;
+    margin: 10px 0 0 20px;
+}
+
+    #gallery_container .top_intro p {
+        margin: 10px 0 0 30px;
+    }
+
+    #gallery_container .top_intro a {
+        color: #007386;
+        text-decoration: underline;
+    }
+
+#gallery_container .gallery_content {
+    margin: 15px 12px;
+}
+
+#gallery_container {
+    margin: 20px 0 0 12px;
+}
+
+    #gallery_container .week_a {
+        margin-bottom: 2px;
+        position: relative;
+    }
+
+.sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#gallery_container .week_b {
+    position: relative;
+}
+
+.gallery_nav_container {
+    margin: 10px 0;
+    width: 725px;
+}
+
+.gallery_nav1 {
+    height: 38px;
+    background: url(/images/gallery/gallery_nav1_bg.jpg) repeat-x;
+    overflow: hidden;
+    border-top: 1px solid #c0d0d6;
+    border-left: 1px solid #c0d0d6;
+    border-right: 1px solid #c0d0d6;
+    position: relative;
+}
+
+.gallery_nav_clinical {
+    height: 38px;
+    background: url(/images/gallery/gallery_nav1_bg.jpg) repeat-x;
+    overflow: hidden;
+    border: 1px solid #c0d0d6;
+    position: relative;
+}
+
+.gallery_nav2 {
+    height: 112px;
+    background: url(/images/gallery/gallery_nav2_bg.jpg) repeat-x;
+    overflow: hidden;
+    border: 1px solid #c0d0d6;
+    position: relative;
+}
+
+img#c_select {
+    position: absolute;
+    top: 24px;
+    left: 37px;
+}
+
+img#c_compare {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+img#c_zoom {
+    position: absolute;
+    top: 15px;
+    left: 390px;
+}
+
+img#c_share {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+img#c_minus {
+    position: absolute;
+    top: 15px;
+    left: 448px;
+}
+
+img#c_plus {
+    position: absolute;
+    top: 16px;
+    right: 125px;
+}
+
+.nav_bar {
+    width: 160px;
+    position: absolute;
+    top: 13px;
+    right: 120px;
+}
+
+.nav_week {
+    position: absolute;
+    top: 7px;
+    left: 165px;
+    overflow: hidden;
+}
+
+    .nav_week img {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+.thumbs_containers {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+}
+
+#gallery_container ul, #gallery_container ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    #gallery_container ul.gallery_thumbs li {
+        float: left;
+        padding: 0;
+        margin: 0 1px 0 0;
+        list-style: none;
+    }
+
+        #gallery_container ul.gallery_thumbs li a {
+            width: 126px;
+            height: 94px;
+            cursor: pointer;
+        }
+
+        #gallery_container ul.gallery_thumbs li span {
+            width: 126px;
+            height: 95px;
+            overflow: hidden;
+            display: block;
+        }
+
+        #gallery_container ul.gallery_thumbs li a {
+            text-decoration: none;
+            display: block;
+        }
+
+.week8_container {
+    background-color: #fff;
+    overflow: hidden;
+    width: 725px;
+}
+
+.week16_container {
+    background-color: #fff;
+    overflow: hidden;
+    width: 725px;
+}
+
+a#w8_sign {
+    width: 94px;
+    height: 25px;
+    text-indent: -9999px;
+    background-image: url(/images/gallery/w8_toggle.jpg);
+    display: block;
+    float: left;
+}
+
+a#w16_sign {
+    width: 98px;
+    height: 25px;
+    text-indent: -9999px;
+    background-image: url(/images/gallery/w16_toggle.jpg);
+    display: block;
+    float: left;
+}
+
+div.nav_week a.active {
+    background-position: center bottom;
+}
+/* thumb image 
+
+a#thumb1_week8, a#thumb1_week16 {
+	width: 126px;
+	height: 95px;
+	background: url(/images/gallery/claire/c_thumb1s.jpg) no-repeat;
+	text-indent: -9999px;
+}
+a#thumb1_week8:hover, a#thumb1_week16:hover {
+	background: url(/images/gallery/claire/c_thumb1s.jpg) no-repeat center bottom;
+}
+a#thumb2_week8, a#thumb2_week16 {
+	width: 126px;
+	height: 95px;
+	background: url(/images/gallery/claire/c_thumb2s.jpg) no-repeat;
+	text-indent: -9999px;
+}
+
+a#thumb2_week8:hover, a#thumb2_week16:hover {
+	background: url(/images/gallery/claire/c_thumb2s.jpg) no-repeat center bottom;
+}
+a#thumb3_week8, a#thumb3_week16 {
+	width: 126px;
+	height: 95px;
+	background: url(/images/gallery/claire/c_thumb3s.jpg) no-repeat;
+	text-indent: -9999px;
+}
+a#thumb3_week8:hover, a#thumb3_week16:hover {
+	background: url(/images/gallery/claire/c_thumb3s.jpg) no-repeat center bottom;
+}
+a#thumb4_week8, a#thumb4_week16 {
+	width: 126px;
+	height: 95px;
+	background: url(/images/gallery/claire/c_thumb4s.jpg) no-repeat;
+	text-indent: -9999px;
+}
+a#thumb4_week8:hover, a#thumb4_week16:hover {
+	background: url(/images/gallery/claire/c_thumb4s.jpg) no-repeat center bottom;
+}
+.thumb_active {
+	background-position: center bottom;
+}
+*/
+a.thumb2_week8_active, a.thumb2_week16_active {
+    width: 126px;
+    height: 95px;
+    background: url(/images/gallery/claire/c_thumb2s.jpg) no-repeat center bottom;
+    text-indent: -9999px;
+}
+
+img.preload_image {
+    display: none;
+}
+
+img.show {
+    display: block;
+}
+
+img#claire_img {
+    margin: 10px;
+}
+/* clinical trial gallery */
+.gallery_left_nav {
+    background-color: #D7E2E4;
+    border-top: 1px solid #fff;
+}
+
+ul.clincial_nav {
+    overflow: hidden;
+    padding: 10px 0 10px 6px;
+}
+
+    ul.clincial_nav li {
+        float: left;
+        margin: 0 5px 5px 0;
+    }
+
+        ul.clincial_nav li a {
+            width: 118px;
+            height: 36px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        ul.clincial_nav li span {
+            width: 118px;
+            height: 36px;
+            overflow: hidden;
+            display: block;
+        }
+/*
+ul.clincial_nav li a#thumb1_week16, ul.clincial_nav li a#thumb1_week8 {
+	background: url(/images/gallery/clinical/trial_thumb1.jpg) no-repeat center bottom;
+}
+ul.clincial_nav li a#thumb2_week16, ul.clincial_nav li a#thumb2_week8 {
+	background: url(/images/gallery/clinical/trial_thumb2.jpg) no-repeat center bottom;
+}
+ul.clincial_nav li a#thumb3_week16, ul.clincial_nav li a#thumb3_week8 {
+	background: url(/images/gallery/clinical/trial_thumb3.jpg) no-repeat center bottom;
+}
+ul.clincial_nav li a#thumb4_week16, ul.clincial_nav li a#thumb4_week8 {
+	background: url(/images/gallery/clinical/trial_thumb4.jpg) no-repeat center bottom;
+}
+ul.clincial_nav li a#thumb5_week16, ul.clincial_nav li a#thumb5_week8 {
+	background: url(/images/gallery/clinical/trial_thumb5.jpg) no-repeat center bottom;
+}
+ul.clincial_nav li a#thumb6_week16, ul.clincial_nav li a#thumb6_week8 {
+	background: url(/images/gallery/clinical/trial_thumb6.jpg) no-repeat center bottom;
+}
+ul.clincial_nav li a#thumb7_week16, ul.clincial_nav li a#thumb7_week8 {
+	background: url(/images/gallery/clinical/trial_thumb7.jpg) no-repeat center bottom;
+}
+*/
+
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -0.6em;
+    top: -0.3em;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: default;
+    height: 1.2em;
+    position: absolute;
+    width: 1.2em;
+    z-index: 2;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: url("../images/ui/ui-bg_glass_75_a59a8d_1x400.png") repeat-x scroll 50% 50% #A59A8D;
+    border: 1px solid #D3D3D3;
+    color: #666666;
+    font-weight: normal;
+    outline: medium none;
+}
+
+.ui-widget-content a {
+    color: #666666;
+}
+
+.ui-widget-content, .ui-state-default, .ui-widget-content .ui-state-default {
+    border: medium none;
+}
+
+.ui-corner-all {
+    border-radius: 4px 4px 4px 4px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: url("../images/ui/ui-bg_glass_75_a59a8d_1x400.png") repeat-x scroll 50% 50% #A59A8D;
+    border: 1px solid #D3D3D3;
+    color: #666666;
+    font-weight: normal;
+    outline: medium none;
+}
+
+.ui-icon-circle-minus {
+    background: url(/images/gallery/zoom/nav_minus.gif) no-repeat;
+    width: 12px;
+    height: 13px;
+}
+
+.ui-icon-circle-plus {
+    background: url(/images/gallery/zoom/nav_plus.gif) no-repeat;
+    width: 12px;
+    height: 13px;
+}
+
+.ui-slider {
+    background: url(/images/gallery/zoom/c_line.gif) no-repeat;
+    width: 120px;
+    height: 6px;
+}
+
+    .ui-slider .ui-slider-handle {
+        background: url(/images/gallery/zoom/nav_dot.gif) no-repeat;
+        width: 19px;
+        height: 18px;
+    }
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.6em;
+}
+
+.ui-widget-content, .ui-state-default, .ui-widget-content .ui-state-default {
+    border: none;
+}
+
+.gzoomSlider {
+    margin: 3px 9px 0 6px;
+    position: relative;
+    width: 120px;
+    float: left;
+}
+
+#img_dual {
+    margin: 15px 0;
+    display: block;
+}
+
+.gzoomwrap {
+    cursor: pointer;
+    background: url(/images/gallery/zoom/loader.gif) no-repeat center;
+}
+
+.minizoompan {
+    position: relative;
+    border: 0;
+    overflow: hidden;
+}
+
+.gzoombutton {
+    cursor: pointer;
+    float: left;
+}
