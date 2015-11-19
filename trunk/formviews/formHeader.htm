@@ -1,0 +1,217 @@
+﻿<div class="counselor-data" style="background: #F5F6CE; width: 100%; padding: 10px; margin-top: 10px; border-radius: 10px; border: 1px solid #F5F6CE;">
+
+    <h4 class="not-print-item not-print-item">顾问信息 | Consultant Information (Official Use Only)</h4>
+    <div class="row  top-buffer not-print-item">
+        <div class="col-lg-4 form-group has-warning">
+            <label class="control-label">
+                顾问姓名 Consultant Name</label><input name="counselorName" ng-model="clientInfo.CounselorName"
+                    class="form-control input-sm" />
+        </div>
+        <div class="col-lg-8"
+            style="border-radius: 10px; padding: 5px !important;">
+            <!-- RADIO BUTTONS -->
+            <label>城市 City</label>
+            <div class="form-group">
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="上海外联"
+                            ng-model="clientInfo.ImportCity">上海 
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="青岛外联"
+                            ng-model="clientInfo.ImportCity">青岛
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="广州外联"
+                            ng-model="clientInfo.ImportCity">广州
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="苏州外联"
+                            ng-model="clientInfo.ImportCity">苏州 
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="成都外联"
+                            ng-model="clientInfo.ImportCity">成都
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="北京外联"
+                            ng-model="clientInfo.ImportCity">北京 
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="杭州外联"
+                            ng-model="clientInfo.ImportCity">杭州
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="哈尔滨外联"
+                            ng-model="clientInfo.ImportCity">哈尔滨 
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="深圳外联"
+                            ng-model="clientInfo.ImportCity">深圳 
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio"
+                            name="ImportCity" value="沈阳外联"
+                            ng-model="clientInfo.ImportCity">沈阳
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <div class="row  top-buffer">
+            <div class="col-xs-4">
+                <div style="padding-left: 10px">
+                    <label>
+                        电话 Phone</label><input ng-model="clientInfo.CounselorPhone" class="form-control input-sm" />
+                </div>
+
+            </div>
+            <div class="col-xs-4">
+                <label>
+                    微信 Wechat</label><input ng-model="clientInfo.CounselorWeChat" class="form-control input-sm" />
+            </div>
+            <div class="col-xs-4">
+
+                <label>
+                    邮箱 Email</label><input style="width: 95%" type="email" ng-model="clientInfo.CounselorEmail" class="form-control input-sm" />
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row  top-buffer not-print-item">
+    <div class="col-xs-12">
+
+        <span style="color: red;">红色星号为必填</span>
+    </div>
+</div>
+<div class="form-area">
+    <h4 class="not-print-item">客户信息 | Client Information</h4>
+    <div id="standardItems">
+        <div class="row  top-buffer">
+            <div class="col-xs-4">
+                <label for="ClientName" class="required client-name">
+                    姓名 Name</label><input ng-model="clientInfo.ClientName" id="ClientName" class="form-control input-lg required" required />
+            </div>
+            <div class="col-xs-3">
+                <label>性别 Gender</label>
+                <div class="form-group">
+                    <div class="radio">
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="Gender" value="0"
+                                ng-model="clientInfo.Gender">女 F
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="GreenCardStatus" value="1"
+                                ng-model="clientInfo.Gender">男 M
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" col-xs-5">
+
+                <!-- RADIO BUTTONS -->
+                <label>绿卡状态 Green Card Status</label>
+                <div class="form-group">
+                    <div class="radio">
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="GreenCardStatus" value="i526"
+                                ng-model="clientInfo.GreenCardStatus">I-526
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="GreenCardStatus" value="ds260"
+                                ng-model="clientInfo.GreenCardStatus">DS-260
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="GreenCardStatus" value="i485"
+                                ng-model="clientInfo.GreenCardStatus">I-485
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="GreenCardStatus" value="i829"
+                                ng-model="clientInfo.GreenCardStatus">I-829 
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio"
+                                name="GreenCardStatus" value="nonImmigrationClient"
+                                ng-model="clientInfo.GreenCardStatus">非移民客户
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  top-buffer">
+            <div class="col-xs-4">
+                <label for="clientPhone" class="required">
+                    电话 Phone</label><input ng-model="clientInfo.Phone" id="clientPhone" class="form-control input-sm required" />
+            </div>
+            <div class="col-xs-3">
+                <label class="required" for="clientWeChat">
+                    微信 Wechat</label><input ng-model="clientInfo.WeChat" id="clientWeChat" class="form-control input-sm required" />
+            </div>
+            <div class="col-xs-5">
+                <label class="required" for="clientEmail">
+                    邮箱 Email</label><input type="email" ng-model="clientInfo.Email" id="clientEmail" class="form-control input-sm required" />
+            </div>
+        </div>
+        <div class="row  top-buffer" style="margin-top: 10px;">
+            <div class="col-xs-12">
+                <label class="required" for="clientAddress">
+                    住址 Address</label><input ng-model="clientInfo.Address" id="clientAddress" class="form-control input-sm required" />
+            </div>
+        </div>
+        <div class="row  top-buffer">
+            <div class="col-xs-4">
+                <label for="clientCity" class="required">
+                    城市 City</label><input ng-model="clientInfo.City" id="clientCity" class="form-control input-sm required" />
+            </div>
+            <div class="col-xs-3">
+                <label for="clientState" class="required state-label">
+                    省 State</label>
+                <select class="form-control col-lg-12 " id="clientState" ng-model="clientInfo.State" ng-options="state.AbName as state.StateName for state in chineseStates">
+                </select>
+            </div>
+            <div class="col-xs-5">
+                <label for="clientZipCode">
+                    邮编号码 Zip Code</label><input ng-model="clientInfo.ZipCode" id="clientZipCode" class="form-control input-sm" />
+            </div>
+        </div>
+    </div>
+    <div class="row  top-buffer" style="display: none">
+        <div class="col-xs-3">
+            <label>
+                登陆城市 Arrival City</label><input ng-model="clientInfo.Destination" class="form-control input-sm" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                州 Arrival State</label>
+            <select class="form-control col-lg-12" ng-model="clientInfo.ArrivalState" ng-options="state.AbName as state.StateName for state in englishNames">
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <label>
+                登陆日期 Arrival Date</label><input ng-model="clientInfo.ArrivalDate" class="form-control input-sm" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                离开日期 Leaving Date</label><input ng-model="clientInfo.DepartureDate" class="form-control input-sm" />
+        </div>
+    </div>
+
+</div>

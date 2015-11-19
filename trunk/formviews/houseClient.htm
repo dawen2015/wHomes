@@ -1,0 +1,319 @@
+﻿<div class="house-request-form-data" style="display:none">
+    <h4>购房服务申请表 HOUSING REQUEST</h4>
+    <h5>购买意向城市 州 City And State
+    </h5>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.North">
+                波士顿 Boston
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.SouthWest">
+                纽约 NYC
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.NorthWest">
+                洛杉矶 LA
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.West">
+                旧金山 SF
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.South">
+                费城 PA
+            </label>
+        </div>
+    </div>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.NorthEast">
+                华盛顿 Washington DC
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.southEast">
+                西雅图 Seattle
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.East">
+                休斯顿 Huston
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.Atlanta">
+                亚特兰大 Atlanta
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.Miami">
+                迈阿密 Miami
+            </label>
+        </div>
+    </div>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.Orlando">
+                奥兰多Orlando
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.hawaii">
+                夏威夷&nbsp;Hawaii
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.LongIsland">
+                长岛&nbsp;Long Island
+            </label>
+        </div>
+        <div class=" col-xs-4 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.Portland">
+                波特兰 Portland
+            </label>
+        </div>
+    </div>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.Chicago">
+                芝加哥 Chicago
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.SanDiego">
+                圣地亚哥 San Diego
+            </label>
+        </div>
+        <div class="col-xs-2">
+            <select class="form-control col-lg-12" ng-model="clientInfo.PreferredState" ng-options="state.AbName as state.StateName for state in englishNames">
+            </select>
+        </div>
+    </div>
+    <h5>用途 Purpose
+    </h5>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.PurchaseHouseforInvestment">
+                投资 Investment
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.PurchaseHouseForSelf">
+                自住 To Live There
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.BothInvstmtment">
+                投资,自住 Both
+            </label>
+        </div>
+    </div>
+    <h5>学区要求 School District
+    </h5>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.ExcellentDistrict">
+                顶级 Excellent
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.GoodDistrict">
+                好 Good
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.GeneralDistrict">
+                一般 General
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.Washington">
+                不考虑 N/A
+            </label>
+        </div>
+    </div>
+    <h5>房型 House Type
+    </h5>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.InterestedHouse">
+                别墅 House
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.InterestedTownHouse">
+                联排别墅 Townhouse
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.InterestedCondo">
+                公寓 Condos
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.InterestedApartment">
+                其他 Others
+            </label>
+        </div>
+    </div>
+    <h5>房龄 Age of House
+    </h5>
+    <div class="row  top-buffer">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.NewHouse">
+                新房 New
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.MoveInImmediately">
+                立可入住二手房
+            </label>
+        </div>
+        <div class=" col-xs-2 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.OverTenYears">
+                不考虑
+            </label>
+        </div>
+    </div>
+    <h4>房间数 Room Numbers</h4>
+    <div class="row  top-buffer">
+        <div class="col-xs-3">
+            <label>
+                室 Bedrooms</label><input ng-model="clientInfo.PreferredBedrooms" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                卫 Bathrooms</label>
+            <input ng-model="clientInfo.PreferredBathRooms" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                厅 Living Rooms</label><input ng-model="clientInfo.PreferredGarages" class="form-control input-lg" />
+        </div>
+    </div>
+    <h4>面积和价位 （1 m²=10.764 ft²）  Size And Price
+    </h4>
+    <div class="row  top-buffer">
+        <div class="col-xs-3">
+            <label>
+                最低 Minimum Size (ft²/)</label><input ng-model="clientInfo.MinPreferedFootage" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                最高 Maximum Size (ft²/)</label>
+            <input ng-model="clientInfo.MaxPreferredFootage" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                最低 Mimum Price (USD)
+            </label>
+            <input ng-model="clientInfo.MinPreferedPrice" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                最高 Maximum Price (USD)
+            </label>
+            <input ng-model="clientInfo.MaxPreferredPrice" class="form-control input-lg" />
+        </div>
+    </div>
+    <div class="row  top-buffer">
+        <div class="col-xs-3">
+            <label>
+                预计看房时间</label><input ng-model="clientInfo.FirstVisitHouseTime" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                预计入住时间</label>
+            <input ng-model="clientInfo.TimeToMoveIn" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                孩子年龄
+            </label>
+            <input ng-model="clientInfo.ChildAge" class="form-control input-lg" />
+        </div>
+        <div class="col-xs-3">
+            <label>
+                年级
+            </label>
+            <input ng-model="clientInfo.ChildGrade" class="form-control input-lg" />
+        </div>
+    </div>
+    <div class="row  top-buffer" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class=" col-xs-1 checkbox">
+        </div>
+        <div class=" col-xs-4 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.NeedFinancing" ng-true-value="'Yes'"
+                    ng-false-value="'No'">
+                是否需要贷款 Needs Finance
+            </label>
+        </div>
+        <div class=" col-xs-7 checkbox">
+            <label>
+                <input type="checkbox" ng-model="clientInfo.HaveLiquidAsset" ng-true-value="'Yes'"
+                    ng-false-value="'No'">
+                是否在海外或者香港有足够的资金存款 Have Money Deposited Oversea Account
+            </label>
+        </div>
+    </div>
+    <div class="row  top-buffer">
+        <div class="col-xs-12">
+            <label>
+                购房原因及选址要素（请填写三个）Please state three reasons of purchasing a property</label>
+            <textarea id="textareaEdit" ng-model="textareaValue" ng-model="clientInfo.ReasonsToPurchase"></textarea>
+        </div>
+    </div>
+</div>
